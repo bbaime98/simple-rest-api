@@ -16,14 +16,6 @@ class User {
   static findById(id) {
     return users.find(user => user.id === id);
   }
-
-  static findByEmail(email) {
-    return users.find(user => user.email === email);
-  }
-
-  static getAll() {
-    return users;
-  }
 }
 
 module.exports = User;
